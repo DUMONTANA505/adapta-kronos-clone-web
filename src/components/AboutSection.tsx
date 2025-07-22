@@ -1,4 +1,4 @@
-import { Target, Eye, TrendingUp, Heart, Zap } from "lucide-react";
+import { Target, Eye, TrendingUp, Heart, Zap, Brain } from "lucide-react";
 
 export function AboutSection() {
   const benefits = [
@@ -21,6 +21,10 @@ export function AboutSection() {
     {
       icon: Zap,
       text: "Transformar desafios em oportunidades de crescimento"
+    },
+    {
+      icon: Brain,
+      text: "Reduzir o estresse e recuperar o equilíbrio mesmo em tempos turbulentos"
     }
   ];
 
