@@ -46,25 +46,14 @@ export function HeroSection() {
 
         {/* Video Player */}
         <div className="bg-card rounded-lg p-8 shadow-2xl max-w-2xl mx-auto">
-          <div className="aspect-video bg-muted rounded-lg overflow-hidden">
-            {/* Para vídeo do YouTube, substitua por iframe */}
-            {/* <iframe 
+        <div className="aspect-video bg-muted rounded-lg overflow-hidden">
+            <iframe 
               className="w-full h-full"
-              src="https://www.youtube.com/embed/SEU_VIDEO_ID"
+              src="https://www.youtube.com/embed/FBH37ow7uME"
               title="KRONOS - Aula Magna"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
-            ></iframe> */}
-            
-            {/* Para arquivo de vídeo direto */}
-            <video 
-              className="w-full h-full object-cover"
-              controls
-              poster="/placeholder-video-thumb.jpg"
-            >
-              <source src="/seu-video.mp4" type="video/mp4" />
-              <p className="text-muted-foreground p-4">Seu navegador não suporta vídeo HTML5.</p>
-            </video>
+            ></iframe>
           </div>
         </div>
       </div>
