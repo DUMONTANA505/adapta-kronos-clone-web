@@ -25,8 +25,8 @@ export function HeroSection() {
         </p>
 
         {/* Video Player */}
-        <div className="bg-card rounded-lg p-8 shadow-2xl max-w-5xl mx-auto mb-12">
-        <div className="aspect-video bg-muted rounded-lg overflow-hidden">
+        <div className="bg-card rounded-lg p-2 md:p-4 lg:p-8 shadow-2xl mx-auto mb-12 max-w-xs sm:max-w-lg md:max-w-3xl lg:max-w-5xl">
+        <div className="aspect-video bg-muted rounded overflow-hidden">
             <iframe 
               className="w-full h-full"
               src="https://www.youtube.com/embed/FBH37ow7uME"
