@@ -29,7 +29,7 @@ export function HeroSection() {
         <div className="aspect-video bg-muted rounded overflow-hidden">
             <iframe 
               className="w-full h-full"
-              src="https://www.youtube.com/embed/FBH37ow7uME"
+              src="https://www.youtube.com/embed/M4AFH1JnHMk"
               title="KRONOS - Aula Magna"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
