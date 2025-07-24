@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Sparkles } from "lucide-react";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,23 +14,25 @@ export function Header() {
   };
 
   const menuItems = [
-    { label: "Sobre", id: "sobre" },
-    { label: "Funcionalidades", id: "funcionalidades" },
-    { label: "Metodologia", id: "metodologia" },
-    { label: "Especialistas", id: "especialistas" },
-    { label: "Parceiros", id: "parceiros" },
-    { label: "Depoimentos", id: "depoimentos" },
-    { label: "Planos", id: "planos" },
-    { label: "FAQ", id: "faq" },
-    { label: "Contato", id: "contato" }
+    { label: "Fundamentos", id: "fundamentos", color: "hover:text-kronos-purple" },
+    { label: "Funcionalidades", id: "funcionalidades", color: "hover:text-kronos-blue" },
+    { label: "Metodologia", id: "metodologia", color: "hover:text-kronos-cyan" },
+    { label: "IA Híbrida", id: "ia-hibrida", color: "hover:text-kronos-gold" },
+    { label: "Especialistas", id: "especialistas", color: "hover:text-kronos-orange" },
+    { label: "Depoimentos", id: "depoimentos", color: "hover:text-foreground" }
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-kronos-lighter/30">
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
-        <div className="text-2xl font-bold text-primary">
-          KRONOS
+        <div className="flex items-center space-x-3">
+          <div className="relative">
+            <Sparkles className="h-8 w-8 text-kronos-purple animate-pulse" />
+          </div>
+          <div className="text-2xl font-display font-bold bg-gradient-text bg-clip-text text-transparent">
+            KRONOS
+          </div>
         </div>
 
         {/* Desktop Menu */}
@@ -39,7 +41,7 @@ export function Header() {
             <button
               key={item.id}
               onClick={() => scrollToSection(item.id)}
-              className="text-foreground hover:text-primary transition-colors duration-200"
+              className={`text-muted-foreground ${item.color} transition-all duration-300 font-medium`}
             >
               {item.label}
             </button>
@@ -50,15 +52,15 @@ export function Header() {
         <div className="hidden lg:block">
           <Button 
             onClick={() => scrollToSection('planos')}
-            className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-6"
+            className="bg-gradient-button hover:shadow-glow transition-all duration-300 font-semibold px-6"
           >
-            COMECE AGORA
+            Despertar Agora
           </Button>
         </div>
 
         {/* Mobile Menu Button */}
         <button
-          className="lg:hidden text-foreground"
+          className="lg:hidden text-foreground p-2 rounded-lg hover:bg-kronos-light transition-colors"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -67,22 +69,22 @@ export function Header() {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="lg:hidden absolute top-full left-0 right-0 bg-background border-b border-border">
+        <div className="lg:hidden absolute top-full left-0 right-0 bg-gradient-card border-b border-kronos-lighter/30 m-4 rounded-lg">
           <nav className="container mx-auto px-6 py-4 space-y-4">
             {menuItems.map((item) => (
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="block w-full text-left text-foreground hover:text-primary transition-colors duration-200 py-2"
+                className={`block w-full text-left text-muted-foreground ${item.color} transition-colors duration-200 py-2`}
               >
                 {item.label}
               </button>
             ))}
             <Button 
               onClick={() => scrollToSection('planos')}
-              className="w-full mt-4 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold"
+              className="w-full mt-4 bg-gradient-button hover:shadow-glow transition-all duration-300 font-semibold"
             >
-              COMECE AGORA
+              Despertar Agora
             </Button>
           </nav>
         </div>

@@ -65,14 +65,33 @@ export default {
 				kronos: {
 					purple: 'hsl(var(--kronos-purple))',
 					'purple-bright': 'hsl(var(--kronos-purple-bright))',
+					'purple-soft': 'hsl(var(--kronos-purple-soft))',
+					blue: 'hsl(var(--kronos-blue))',
+					cyan: 'hsl(var(--kronos-cyan))',
+					gold: 'hsl(var(--kronos-gold))',
+					orange: 'hsl(var(--kronos-orange))',
 					dark: 'hsl(var(--kronos-dark))',
-					darker: 'hsl(var(--kronos-darker))'
+					darker: 'hsl(var(--kronos-darker))',
+					light: 'hsl(var(--kronos-light))',
+					lighter: 'hsl(var(--kronos-lighter))'
 				}
 			},
 			backgroundImage: {
 				'gradient-hero': 'var(--gradient-hero)',
 				'gradient-section': 'var(--gradient-section)',
-				'gradient-card': 'var(--gradient-card)'
+				'gradient-card': 'var(--gradient-card)',
+				'gradient-button': 'var(--gradient-button)',
+				'gradient-text': 'var(--gradient-text)',
+				'gradient-foundation': 'var(--gradient-foundation)'
+			},
+			fontFamily: {
+				'sans': ['Inter', 'system-ui', 'sans-serif'],
+				'display': ['Playfair Display', 'serif']
+			},
+			boxShadow: {
+				'glow': 'var(--shadow-glow)',
+				'card': 'var(--shadow-card)',
+				'elegant': 'var(--shadow-elegant)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
