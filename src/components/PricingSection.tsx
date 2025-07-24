@@ -54,8 +54,28 @@ export function PricingSection() {
   ];
 
   return (
-    <section id="planos" className="py-20 bg-gradient-section">
-      <div className="container mx-auto px-6">
+    <section 
+      id="planos" 
+      className="py-20 bg-gradient-section relative"
+      style={{
+        backgroundImage: `url('/lovable-uploads/3235eb22-8dfb-44f1-a638-4a5f8caaacff.png')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
+    >
+      <div 
+        className="absolute inset-0 bg-gradient-section"
+        style={{
+          filter: 'grayscale(100%)',
+          opacity: '0.1',
+          backgroundImage: `url('/lovable-uploads/3235eb22-8dfb-44f1-a638-4a5f8caaacff.png')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
+      ></div>
+      <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
             Planos e Preços
