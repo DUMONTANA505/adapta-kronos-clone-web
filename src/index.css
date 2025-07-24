@@ -41,13 +41,16 @@ All colors MUST be HSL.
     /* KRONOS specific colors */
     --kronos-purple: 280 100% 70%;
     --kronos-purple-bright: 280 100% 80%;
+    --kronos-gold: 45 100% 65%;
+    --kronos-gold-bright: 45 100% 75%;
     --kronos-dark: 0 0% 4%;
     --kronos-darker: 0 0% 2%;
 
     /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(0 0% 4%), hsl(280 60% 15%), hsl(280 80% 25%));
+    --gradient-hero: linear-gradient(135deg, hsl(0 0% 4%), hsl(280 60% 15%), hsl(45 60% 20%), hsl(280 80% 25%));
     --gradient-section: linear-gradient(180deg, hsl(0 0% 4%), hsl(280 40% 8%));
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 8%), hsl(280 30% 12%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 8%), hsl(280 30% 12%), hsl(45 40% 15%));
+    --gradient-gold: linear-gradient(135deg, hsl(45 100% 65%), hsl(45 100% 75%));
 
     --sidebar-background: 0 0% 8%;
     --sidebar-foreground: 0 0% 100%;

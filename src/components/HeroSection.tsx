@@ -14,7 +14,7 @@ export function HeroSection() {
       <div className="container mx-auto text-center max-w-4xl">
         {/* Main Title */}
         <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
-          SUPERE A ESTAGNAÇÃO.<br />
+          SUPERE A <span className="text-kronos-gold">ESTAGNAÇÃO</span>.<br />
           <span className="text-primary">TRANSFORME SUA VIDA.</span>
         </h1>
 
@@ -25,11 +25,11 @@ export function HeroSection() {
         </p>
 
         {/* Video Player */}
-        <div className="bg-card rounded-lg p-0 md:p-4 lg:p-8 shadow-2xl -mx-10 mb-12 md:mx-auto md:max-w-3xl lg:max-w-5xl">
+        <div className="bg-gradient-card rounded-lg p-0 md:p-4 lg:p-8 shadow-2xl border border-kronos-gold/20 -mx-10 mb-12 md:mx-auto md:max-w-3xl lg:max-w-5xl">
         <div className="aspect-video bg-muted rounded overflow-hidden">
             <iframe 
               className="w-full h-full"
-              src="https://www.youtube.com/embed/M4AFH1JnHMk"
+              src="https://www.youtube.com/embed/FBH37ow7uME"
               title="KRONOS - Aula Magna"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
@@ -50,7 +50,7 @@ export function HeroSection() {
           <Button 
             variant="outline"
             size="lg"
-            className="border-primary text-primary hover:bg-primary/10 px-8 py-4 text-lg"
+            className="border-kronos-gold text-kronos-gold hover:bg-kronos-gold/10 px-8 py-4 text-lg"
           >
             <Play className="mr-2 h-5 w-5" />
             Assista à Aula Magna
