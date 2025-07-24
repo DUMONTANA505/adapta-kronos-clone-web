@@ -59,7 +59,7 @@ export function PricingSection() {
       className="py-20 bg-gradient-section relative"
       style={{
         backgroundImage: `url('/lovable-uploads/da55e139-af2c-4490-8024-3602ed2ef38a.png')`,
-        backgroundSize: 'cover',
+        backgroundSize: 'contain',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat'
       }}
@@ -70,7 +70,7 @@ export function PricingSection() {
           filter: 'grayscale(100%)',
           opacity: '0.1',
           backgroundImage: `url('/lovable-uploads/da55e139-af2c-4490-8024-3602ed2ef38a.png')`,
-          backgroundSize: 'cover',
+          backgroundSize: 'contain',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat'
         }}
