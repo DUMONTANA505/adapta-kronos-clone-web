@@ -24,7 +24,7 @@ export function HeroSection() {
         </p>
 
         {/* Video Player */}
-        <div className="bg-card rounded-lg p-0 md:p-4 lg:p-8 shadow-2xl -mx-10 mb-12 md:mx-auto md:max-w-3xl lg:max-w-5xl px-0 py-0">
+        <div className="bg-card rounded-lg p-0 md:p-1 lg:p-1 shadow-2xl -mx-10 mb-12 md:mx-auto md:max-w-4xl lg:max-w-6xl px-0 py-0">
         <div className="aspect-video bg-muted rounded overflow-hidden">
             <iframe className="w-full h-full" src="https://www.youtube.com/embed/FBH37ow7uME" title="KRONOS - Aula Magna" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
           </div>
