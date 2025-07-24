@@ -58,9 +58,9 @@ export function PricingSection() {
       id="planos" 
       className="py-20 bg-gradient-section relative"
       style={{
-        backgroundImage: `url('/lovable-uploads/da55e139-af2c-4490-8024-3602ed2ef38a.png')`,
-        backgroundSize: 'contain',
-        backgroundPosition: 'center',
+        backgroundImage: `url('/lovable-uploads/bbe2fda1-f0d8-423f-80f4-d007199ebf6e.png')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center 20%',
         backgroundRepeat: 'no-repeat'
       }}
     >
