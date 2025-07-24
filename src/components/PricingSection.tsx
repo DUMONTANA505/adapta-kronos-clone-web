@@ -77,10 +77,10 @@ export function PricingSection() {
       ></div>
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
+          <h2 className="text-3xl md:text-5xl font-bold text-black mb-6">
             Planos e Preços
           </h2>
-          <p className="text-xl text-muted-foreground">
+          <p className="text-xl text-black">
             Escolha o plano ideal para sua jornada de transformação
           </p>
         </div>
