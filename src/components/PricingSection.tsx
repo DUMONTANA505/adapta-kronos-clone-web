@@ -58,9 +58,9 @@ export function PricingSection() {
       id="planos" 
       className="py-20 bg-gradient-section relative"
       style={{
-        backgroundImage: `url('/lovable-uploads/bbe2fda1-f0d8-423f-80f4-d007199ebf6e.png')`,
+        backgroundImage: `url('/lovable-uploads/da55e139-af2c-4490-8024-3602ed2ef38a.png')`,
         backgroundSize: 'cover',
-        backgroundPosition: 'center 20%',
+        backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat'
       }}
     >
@@ -70,17 +70,17 @@ export function PricingSection() {
           filter: 'grayscale(100%)',
           opacity: '0.1',
           backgroundImage: `url('/lovable-uploads/da55e139-af2c-4490-8024-3602ed2ef38a.png')`,
-          backgroundSize: 'contain',
+          backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat'
         }}
       ></div>
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold text-black mb-6">
+          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
             Planos e Preços
           </h2>
-          <p className="text-2xl font-semibold text-black">
+          <p className="text-2xl font-semibold text-white">
             Escolha o plano ideal para sua jornada de transformação
           </p>
         </div>
