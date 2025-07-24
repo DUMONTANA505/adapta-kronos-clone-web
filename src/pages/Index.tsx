@@ -1,9 +1,7 @@
 import { Header } from "@/components/Header";
-import { KronosHeroSection } from "@/components/KronosHeroSection";
-import { FundamentosSection } from "@/components/FundamentosSection";
-import { FuncionalidadesSection } from "@/components/FuncionalidadesSection";
-import { IAHibridaSection } from "@/components/IAHibridaSection";
+import { HeroSection } from "@/components/HeroSection";
 import { AboutSection } from "@/components/AboutSection";
+import { FeaturesSection } from "@/components/FeaturesSection";
 import { MethodologySection } from "@/components/MethodologySection";
 import { ExpertsSection } from "@/components/ExpertsSection";
 import { PartnersSection } from "@/components/PartnersSection";
@@ -17,17 +15,17 @@ import { Footer } from "@/components/Footer";
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
-      <Header />
-      <KronosHeroSection />
-      <FundamentosSection />
-      <FuncionalidadesSection />
-      <IAHibridaSection />
+      <HeroSection />
       <AboutSection />
+      <FeaturesSection />
       <MethodologySection />
       <ExpertsSection />
+      <PartnersSection />
+      <MediaRecognitionSection />
       <TestimonialsSection />
       <PricingSection />
       <FAQSection />
+      <NewsletterSection />
       <Footer />
     </div>
   );

@@ -38,31 +38,16 @@ All colors MUST be HSL.
 
     --radius: 0.75rem;
 
-    /* KRONOS Brand Colors */
+    /* KRONOS specific colors */
     --kronos-purple: 280 100% 70%;
     --kronos-purple-bright: 280 100% 80%;
-    --kronos-purple-soft: 280 50% 60%;
-    --kronos-blue: 240 80% 65%;
-    --kronos-cyan: 200 90% 65%;
-    --kronos-gold: 45 95% 65%;
-    --kronos-orange: 25 95% 65%;
     --kronos-dark: 0 0% 4%;
     --kronos-darker: 0 0% 2%;
-    --kronos-light: 0 0% 12%;
-    --kronos-lighter: 0 0% 20%;
 
-    /* KRONOS Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(0 0% 2%) 0%, hsl(280 60% 8%) 25%, hsl(280 80% 15%) 50%, hsl(240 70% 20%) 75%, hsl(200 60% 25%) 100%);
-    --gradient-section: linear-gradient(180deg, hsl(0 0% 4%) 0%, hsl(280 40% 8%) 50%, hsl(0 0% 4%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 8%) 0%, hsl(280 30% 12%) 50%, hsl(240 20% 10%) 100%);
-    --gradient-button: linear-gradient(135deg, hsl(280 100% 70%) 0%, hsl(240 100% 70%) 50%, hsl(200 100% 70%) 100%);
-    --gradient-text: linear-gradient(135deg, hsl(280 100% 80%) 0%, hsl(240 100% 75%) 50%, hsl(200 100% 70%) 100%);
-    --gradient-foundation: linear-gradient(90deg, hsl(280 100% 70%) 0%, hsl(45 100% 70%) 100%);
-    
-    /* Shadows */
-    --shadow-glow: 0 0 40px hsl(280 100% 70% / 0.3);
-    --shadow-card: 0 20px 40px hsl(0 0% 0% / 0.3);
-    --shadow-elegant: 0 10px 30px hsl(280 100% 70% / 0.2);
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(0 0% 4%), hsl(280 60% 15%), hsl(280 80% 25%));
+    --gradient-section: linear-gradient(180deg, hsl(0 0% 4%), hsl(280 40% 8%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 8%), hsl(280 30% 12%));
 
     --sidebar-background: 0 0% 8%;
     --sidebar-foreground: 0 0% 100%;
