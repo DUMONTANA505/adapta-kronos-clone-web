@@ -1,16 +1,15 @@
 import { Button } from "@/components/ui/button";
 import { Play } from "lucide-react";
-
 export function HeroSection() {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({
+        behavior: 'smooth'
+      });
     }
   };
-
-  return (
-    <section className="min-h-screen bg-gradient-hero flex items-center justify-center px-6">
+  return <section className="min-h-screen bg-gradient-hero flex items-center justify-center px-6">
       <div className="container mx-auto text-center max-w-4xl">
         {/* Main Title */}
         <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
@@ -25,38 +24,23 @@ export function HeroSection() {
         </p>
 
         {/* Video Player */}
-        <div className="bg-card rounded-lg p-0 md:p-4 lg:p-8 shadow-2xl -mx-10 mb-12 md:mx-auto md:max-w-3xl lg:max-w-5xl">
+        <div className="bg-card rounded-lg p-0 md:p-4 lg:p-8 shadow-2xl -mx-10 mb-12 md:mx-auto md:max-w-3xl lg:max-w-5xl px-0 py-0">
         <div className="aspect-video bg-muted rounded overflow-hidden">
-            <iframe 
-              className="w-full h-full"
-              src="https://www.youtube.com/embed/FBH37ow7uME"
-              title="KRONOS - Aula Magna"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
+            <iframe className="w-full h-full" src="https://www.youtube.com/embed/FBH37ow7uME" title="KRONOS - Aula Magna" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
           </div>
         </div>
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <Button 
-            size="lg"
-            onClick={() => scrollToSection('planos')}
-            className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-4 text-lg"
-          >
+          <Button size="lg" onClick={() => scrollToSection('planos')} className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-4 text-lg">
             Quero Começar Agora
           </Button>
           
-          <Button 
-            variant="outline"
-            size="lg"
-            className="border-primary text-primary hover:bg-primary/10 px-8 py-4 text-lg"
-          >
+          <Button variant="outline" size="lg" className="border-primary text-primary hover:bg-primary/10 px-8 py-4 text-lg">
             <Play className="mr-2 h-5 w-5" />
             Assista à Aula Magna
           </Button>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 }
