@@ -80,7 +80,7 @@ export function PricingSection() {
           <h2 className="text-3xl md:text-5xl font-bold text-black mb-6">
             Planos e Preços
           </h2>
-          <p className="text-xl text-black">
+          <p className="text-2xl font-semibold text-black">
             Escolha o plano ideal para sua jornada de transformação
           </p>
         </div>
