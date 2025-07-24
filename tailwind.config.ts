@@ -65,8 +65,6 @@ export default {
 				kronos: {
 					purple: 'hsl(var(--kronos-purple))',
 					'purple-bright': 'hsl(var(--kronos-purple-bright))',
-					gold: 'hsl(var(--kronos-gold))',
-					'gold-bright': 'hsl(var(--kronos-gold-bright))',
 					dark: 'hsl(var(--kronos-dark))',
 					darker: 'hsl(var(--kronos-darker))'
 				}
@@ -74,8 +72,7 @@ export default {
 			backgroundImage: {
 				'gradient-hero': 'var(--gradient-hero)',
 				'gradient-section': 'var(--gradient-section)',
-				'gradient-card': 'var(--gradient-card)',
-				'gradient-gold': 'var(--gradient-gold)'
+				'gradient-card': 'var(--gradient-card)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
