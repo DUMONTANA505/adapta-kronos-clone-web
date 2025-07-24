@@ -24,20 +24,8 @@ export function PricingSection() {
     features: ["Agente de IA premium com deep learning", "Sessões ilimitadas com especialistas", "Mentoria 1:1 semanal", "Plano ultra-personalizado", "Acesso VIP à comunidade", "Workshops exclusivos", "Linha direta com especialistas", "Garantia de resultados"],
     highlighted: false
   }];
-  return <section id="planos" className="py-20 bg-gradient-section relative" style={{
-    backgroundImage: `url('/lovable-uploads/da55e139-af2c-4490-8024-3602ed2ef38a.png')`,
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    backgroundRepeat: 'no-repeat'
-  }}>
-      <div style={{
-      filter: 'grayscale(100%)',
-      opacity: '0.1',
-      backgroundImage: `url('/lovable-uploads/da55e139-af2c-4490-8024-3602ed2ef38a.png')`,
-      backgroundSize: 'cover',
-      backgroundPosition: 'center',
-      backgroundRepeat: 'no-repeat'
-    }} className="absolute inset-0 bg-gradient-section bg-zinc-950"></div>
+  return <section id="planos" className="py-20 bg-black relative">
+      <div className="absolute inset-0 bg-black"></div>
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-3xl text-white mb-6 font-bold md:text-7xl">Planos e Preços</h2>
