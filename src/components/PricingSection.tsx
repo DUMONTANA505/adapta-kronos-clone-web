@@ -5,7 +5,7 @@ import { Check, Star } from "lucide-react";
 export function PricingSection() {
   const plans = [
     {
-      name: "Iniciante",
+      name: "Genesis",
       price: "R$ 97",
       period: "/mês",
       description: "Ideal para quem está começando sua jornada de transformação",
@@ -19,7 +19,7 @@ export function PricingSection() {
       highlighted: false
     },
     {
-      name: "Completo",
+      name: "Titan",
       price: "R$ 197",
       period: "/mês",
       description: "Nossa recomendação para transformação completa",
@@ -35,7 +35,7 @@ export function PricingSection() {
       highlighted: true
     },
     {
-      name: "Transformador",
+      name: "Phanteon",
       price: "R$ 397",
       period: "/mês",
       description: "Para quem busca resultados extraordinários",
