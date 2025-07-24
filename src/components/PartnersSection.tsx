@@ -14,9 +14,6 @@ export function PartnersSection() {
           <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
             Stakeholders
           </h2>
-          <p className="text-xl text-muted-foreground">
-            Parceiros que confiam em nossa excelência
-          </p>
         </div>
 
         <div className="max-w-6xl mx-auto">
