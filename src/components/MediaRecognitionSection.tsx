@@ -6,7 +6,7 @@ export function MediaRecognitionSection() {
   return <section id="media-recognition" className="py-20 bg-gradient-section">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold mb-6 text-white">
+          <h2 className="text-3xl md:text-5xl font-bold mb-6 text-white/70">
             Reconhecimento da Mídia
           </h2>
         </div>

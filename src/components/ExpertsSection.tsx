@@ -45,7 +45,7 @@ export function ExpertsSection() {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
-            Nossos Especialistas
+            Especialistas
           </h2>
           <p className="text-xl text-muted-foreground">
             Profissionais de excelência dedicados à sua transformação
