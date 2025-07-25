@@ -16,6 +16,13 @@ export function BenchmarkSection() {
           {/* GPT-4 Turbo Card */}
           <div className="bg-card rounded-lg border shadow-sm p-8">
             <div className="border-2 border-muted rounded-lg p-6 mb-6 text-center">
+              <div className="flex justify-center mb-4">
+                <img 
+                  src="/lovable-uploads/b3b34ba7-459f-4904-9984-fd892aff5091.png" 
+                  alt="OpenAI Logo" 
+                  className="h-8 w-auto opacity-80"
+                />
+              </div>
               <h3 className="text-xl font-semibold mb-2">AVALIAÇÃO TÉCNICA: MÉTODO KRONOS</h3>
               <div className="my-4">
                 <div className="text-4xl font-bold text-kronos-purple mb-2">9.8 / 10</div>
@@ -39,6 +46,13 @@ export function BenchmarkSection() {
           {/* Gemini 2.5 Pro Card */}
           <div className="bg-card rounded-lg border shadow-sm p-8">
             <div className="border-2 border-muted rounded-lg p-6 mb-6 text-center">
+              <div className="flex justify-center mb-4">
+                <img 
+                  src="/lovable-uploads/10e86281-415e-42ec-b9c3-694746c81c09.png" 
+                  alt="Gemini Logo" 
+                  className="h-8 w-auto opacity-80"
+                />
+              </div>
               <h3 className="text-xl font-semibold mb-2">AVALIAÇÃO TÉCNICA: MÉTODO KRONOS</h3>
               <div className="my-4">
                 <div className="text-4xl font-bold text-kronos-purple mb-2">9.8 / 10</div>
