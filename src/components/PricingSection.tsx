@@ -1,25 +1,29 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Check, Star } from "lucide-react";
+import { useState } from "react";
+
 export function PricingSection() {
+  const [isAnnual, setIsAnnual] = useState(false);
+
   const plans = [{
     name: "Genesis",
-    price: "R$ 97",
-    period: "/mês",
+    monthlyPrice: 97,
+    annualPrice: 970,
     description: "Ideal para quem está começando sua jornada de transformação",
     features: ["Agente de IA personalizada básica", "1 sessão mensal com especialista", "Acesso à comunidade", "Relatórios de progresso", "Suporte por chat"],
     highlighted: false
   }, {
     name: "Titan",
-    price: "R$ 197",
-    period: "/mês",
+    monthlyPrice: 197,
+    annualPrice: 1970,
     description: "Nossa recomendação para transformação completa",
     features: ["Agente de IA avançada e adaptativa", "4 sessões mensais com especialista", "Plano personalizado completo", "Monitoramento 24/7", "Acesso prioritário à comunidade", "Materiais exclusivos", "Suporte prioritário"],
     highlighted: true
   }, {
     name: "Phanteon",
-    price: "R$ 397",
-    period: "/mês",
+    monthlyPrice: 397,
+    annualPrice: 3970,
     description: "Para quem busca resultados extraordinários",
     features: ["Agente de IA premium com deep learning", "Sessões ilimitadas com especialista", "Mentoria 1:1 semanal", "Plano ultra-personalizado", "Acesso VIP à comunidade", "Workshops exclusivos", "Linha direta com especialista", "Garantia de resultados"],
     highlighted: false
@@ -32,6 +36,27 @@ export function PricingSection() {
           <p className="text-2xl font-semibold text-white">
             Escolha o plano ideal para sua jornada de transformação
           </p>
+          
+          {/* Toggle Mensal/Anual */}
+          <div className="flex items-center justify-center mt-8 mb-8">
+            <div className="bg-card border border-border rounded-lg p-1 flex">
+              <button
+                onClick={() => setIsAnnual(false)}
+                className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${!isAnnual ? 'bg-primary text-primary-foreground' : 'text-muted-foreground hover:text-foreground'}`}
+              >
+                Mensal
+              </button>
+              <button
+                onClick={() => setIsAnnual(true)}
+                className={`px-4 py-2 rounded-md text-sm font-medium transition-colors flex items-center gap-2 ${isAnnual ? 'bg-primary text-primary-foreground' : 'text-muted-foreground hover:text-foreground'}`}
+              >
+                Anual
+                <span className="bg-green-500/20 text-green-400 px-2 py-1 rounded text-xs">
+                  20% OFF
+                </span>
+              </button>
+            </div>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -49,11 +74,21 @@ export function PricingSection() {
                 </CardTitle>
                 <div className="mb-4">
                   <span className="text-4xl font-bold text-primary">
-                    {plan.price}
+                    R$ {isAnnual ? plan.annualPrice.toLocaleString() : plan.monthlyPrice}
                   </span>
                   <span className="text-muted-foreground">
-                    {plan.period}
+                    {isAnnual ? '/ano' : '/mês'}
                   </span>
+                  {isAnnual && (
+                    <div className="mt-2">
+                      <div className="text-sm text-green-400">
+                        Equivale a R$ {(plan.annualPrice / 12).toFixed(2).replace('.', ',')}/mês
+                      </div>
+                      <div className="text-xs text-muted-foreground">
+                        Economize 20% no plano anual
+                      </div>
+                    </div>
+                  )}
                 </div>
                 <p className="text-muted-foreground text-sm">
                   {plan.description}
