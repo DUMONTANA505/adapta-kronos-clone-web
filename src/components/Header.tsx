@@ -33,7 +33,7 @@ export function Header() {
           <img 
             src="/lovable-uploads/fdf96300-7e24-476d-9b6b-ffabd3444c9b.png" 
             alt="KRONOS Logo" 
-            className="h-10 w-10"
+            className="h-24 w-24"
           />
         </div>
 
