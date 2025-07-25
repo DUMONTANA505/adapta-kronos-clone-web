@@ -17,6 +17,16 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <HeroSection />
       <AboutSection />
+      
+      {/* Frase de destaque antes das funcionalidades */}
+      <section className="py-12 bg-background">
+        <div className="container mx-auto px-6 text-center">
+          <h2 className="text-2xl md:text-3xl font-bold text-kronos-purple">
+            KRONOS NÃO É UM CURSO. É UM ESTILO DE VIDA.
+          </h2>
+        </div>
+      </section>
+      
       <FeaturesSection />
       <MethodologySection />
       <ExpertsSection />

@@ -32,9 +32,9 @@ export function PricingSection() {
       <div className="absolute inset-0 bg-black"></div>
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-3xl text-white mb-6 font-bold md:text-7xl">Planos e Preços</h2>
+          <h2 className="text-3xl text-white mb-6 font-bold md:text-7xl">Valores</h2>
           <p className="text-2xl font-semibold text-white">
-            Escolha o plano ideal para sua jornada de transformação
+            Escolha a jornada ideal para sua transformação
           </p>
           
           {/* Toggle Mensal/Anual */}
