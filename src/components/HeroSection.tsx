@@ -11,11 +11,18 @@ export function HeroSection() {
   };
   return <section className="min-h-screen bg-gradient-hero flex items-center justify-center px-6">
       <div className="container mx-auto text-center max-w-4xl">
+        {/* Brand Title */}
+        <div className="mb-8">
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-primary mb-4 tracking-wider">
+            KRONOS
+          </h1>
+        </div>
+
         {/* Main Title */}
-        <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
+        <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
           SUPERE A ESTAGNAÇÃO.<br />
           <span className="text-primary">TRANSFORME SUA VIDA.</span>
-        </h1>
+        </h2>
 
         {/* Supporting Text */}
         <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
