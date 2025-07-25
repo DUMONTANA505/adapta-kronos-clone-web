@@ -31,7 +31,7 @@ export function Header() {
         {/* Logo */}
         <div className="flex items-center">
           <img 
-            src="/lovable-uploads/f31ff5e0-0d9a-4526-bda3-944c699f6fab.png" 
+            src="/lovable-uploads/fdf96300-7e24-476d-9b6b-ffabd3444c9b.png" 
             alt="KRONOS Logo" 
             className="h-10 w-10"
           />

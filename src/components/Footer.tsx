@@ -6,8 +6,12 @@ export function Footer() {
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between">
           {/* Logo */}
-          <div className="text-2xl font-bold text-primary mb-6 md:mb-0">
-            KRONOS
+          <div className="flex items-center mb-6 md:mb-0">
+            <img 
+              src="/lovable-uploads/fdf96300-7e24-476d-9b6b-ffabd3444c9b.png" 
+              alt="KRONOS Logo" 
+              className="h-10 w-10"
+            />
           </div>
 
           {/* Links */}
