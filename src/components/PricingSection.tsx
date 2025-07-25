@@ -14,14 +14,14 @@ export function PricingSection() {
     price: "R$ 197",
     period: "/mês",
     description: "Nossa recomendação para transformação completa",
-    features: ["Agente de IA avançada e adaptativa", "4 sessões mensais com especialistas", "Plano personalizado completo", "Monitoramento 24/7", "Acesso prioritário à comunidade", "Materiais exclusivos", "Suporte prioritário"],
+    features: ["Agente de IA avançada e adaptativa", "4 sessões mensais com especialista", "Plano personalizado completo", "Monitoramento 24/7", "Acesso prioritário à comunidade", "Materiais exclusivos", "Suporte prioritário"],
     highlighted: true
   }, {
     name: "Phanteon",
     price: "R$ 397",
     period: "/mês",
     description: "Para quem busca resultados extraordinários",
-    features: ["Agente de IA premium com deep learning", "Sessões ilimitadas com especialistas", "Mentoria 1:1 semanal", "Plano ultra-personalizado", "Acesso VIP à comunidade", "Workshops exclusivos", "Linha direta com especialistas", "Garantia de resultados"],
+    features: ["Agente de IA premium com deep learning", "Sessões ilimitadas com especialista", "Mentoria 1:1 semanal", "Plano ultra-personalizado", "Acesso VIP à comunidade", "Workshops exclusivos", "Linha direta com especialista", "Garantia de resultados"],
     highlighted: false
   }];
   return <section id="planos" className="py-20 bg-black relative">
