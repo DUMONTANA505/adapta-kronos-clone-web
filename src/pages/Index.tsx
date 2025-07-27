@@ -29,9 +29,9 @@ const Index = () => {
         </div>
       </section>
       
+      <ExpertsSection />
       <FeaturesSection />
       <MethodologySection />
-      <ExpertsSection />
       <PartnersSection />
       <MediaRecognitionSection />
       <BenchmarkSection />
