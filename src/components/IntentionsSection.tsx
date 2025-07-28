@@ -70,9 +70,7 @@ export const IntentionsSection = () => {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-br from-background via-background to-muted/20 relative overflow-hidden">
-      {/* Background decoration */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--kronos-purple)_0%,_transparent_70%)] opacity-5"></div>
+    <section className="py-20 bg-gradient-section relative overflow-hidden">
       
       <div className="container mx-auto px-6 relative z-10">
         {/* Header */}
@@ -101,7 +99,7 @@ export const IntentionsSection = () => {
                       {/* Icon */}
                       <div className="flex justify-center mb-6">
                         <div className="w-16 h-16 rounded-full bg-kronos-purple/10 flex items-center justify-center">
-                          <IconComponent className="w-8 h-8 text-kronos-purple" />
+                          <IconComponent className="w-8 h-8 text-foreground" />
                         </div>
                       </div>
                       

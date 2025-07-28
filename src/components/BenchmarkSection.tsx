@@ -20,7 +20,7 @@ export function BenchmarkSection() {
                 <img 
                   src="/lovable-uploads/b3b34ba7-459f-4904-9984-fd892aff5091.png" 
                   alt="OpenAI Logo" 
-                  className="h-24 w-auto opacity-80"
+                  className="h-28 w-auto opacity-80"
                 />
               </div>
               <h3 className="text-xl font-semibold mb-2">AVALIAÇÃO TÉCNICA: MÉTODO KRONOS</h3>
@@ -50,7 +50,7 @@ export function BenchmarkSection() {
                 <img 
                   src="/lovable-uploads/10e86281-415e-42ec-b9c3-694746c81c09.png" 
                   alt="Gemini Logo" 
-                  className="h-24 w-auto opacity-80"
+                  className="h-28 w-auto opacity-80"
                 />
               </div>
               <h3 className="text-xl font-semibold mb-2">AVALIAÇÃO TÉCNICA: MÉTODO KRONOS</h3>
