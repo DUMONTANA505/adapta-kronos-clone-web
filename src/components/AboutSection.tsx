@@ -19,7 +19,7 @@ export function AboutSection() {
     icon: Brain,
     text: "Reduzir o estresse e recuperar o equilíbrio mesmo em tempos turbulentos"
   }];
-  return <section id="sobre" className="py-20 bg-gradient-section bg-violet-600">
+  return <section id="sobre" className="py-20 bg-gradient-section">
       <div className="container mx-auto px-0">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">

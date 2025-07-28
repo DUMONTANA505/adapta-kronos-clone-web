@@ -15,7 +15,7 @@ export function PartnersSection() {
           {/* Infinite Carousel */}
           <div className="overflow-hidden">
             <div className="flex animate-scroll-infinite">
-              {duplicatedStakeholders.map((stakeholder, index) => <div key={index} className="flex-shrink-0 mx-8 bg-gradient-card px-8 py-4 whitespace-nowrap bg-slate-950 rounded-full">
+              {duplicatedStakeholders.map((stakeholder, index) => <div key={index} className="flex-shrink-0 mx-8 bg-gradient-card px-8 py-4 whitespace-nowrap rounded-full">
                   <div className="text-foreground font-semibold text-lg px-0">
                     {stakeholder}
                   </div>

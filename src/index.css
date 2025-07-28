@@ -46,8 +46,8 @@ All colors MUST be HSL.
 
     /* Gradients */
     --gradient-hero: linear-gradient(135deg, hsl(0 0% 4%), hsl(280 60% 15%), hsl(280 80% 25%));
-    --gradient-section: linear-gradient(180deg, hsl(0 0% 4%), hsl(280 40% 8%));
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 8%), hsl(280 30% 12%));
+    --gradient-section: hsl(0 0% 0%);
+    --gradient-card: hsl(0 0% 0%);
 
     --sidebar-background: 0 0% 8%;
     --sidebar-foreground: 0 0% 100%;
