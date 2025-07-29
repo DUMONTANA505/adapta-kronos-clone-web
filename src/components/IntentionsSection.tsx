@@ -70,7 +70,7 @@ export const IntentionsSection = () => {
   };
 
   return (
-    <section className="py-20 bg-gradient-section relative overflow-hidden">
+    <section className="py-20 bg-black relative overflow-hidden">
       
       <div className="container mx-auto px-6 relative z-10">
         {/* Header */}
