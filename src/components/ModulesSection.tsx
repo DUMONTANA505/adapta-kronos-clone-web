@@ -1,32 +1,34 @@
+import { Clock, Target, Wind, Activity, Brain, BookOpen } from "lucide-react";
+
 export function ModulesSection() {
   const modules = [
     {
-      number: "1",
+      icon: Clock,
       name: "KRONOS",
       title: "Gestão do Tempo"
     },
     {
-      number: "2", 
+      icon: Target, 
       name: "KAIROS",
       title: "Momento Oportuno"
     },
     {
-      number: "3",
+      icon: Wind,
       name: "ATMOS", 
       title: "Respiração e Energia"
     },
     {
-      number: "4",
+      icon: Activity,
       name: "CORPUS",
       title: "Corpo e Movimento"
     },
     {
-      number: "5",
+      icon: Brain,
       name: "SOFRHEN",
       title: "Autocontrole Mental"
     },
     {
-      number: "6",
+      icon: BookOpen,
       name: "SOPHIA",
       title: "Sabedoria e Conhecimento"
     }
@@ -45,24 +47,25 @@ export function ModulesSection() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          {modules.map((module, index) => (
-            <div 
-              key={index}
-              className="bg-gradient-card p-8 rounded-xl text-center hover:scale-105 transition-transform duration-300 border border-border"
-            >
-              <div className="w-16 h-16 rounded-full bg-primary flex items-center justify-center mx-auto mb-6">
-                <span className="text-2xl font-bold text-primary-foreground">
-                  {module.number}
-                </span>
+          {modules.map((module, index) => {
+            const Icon = module.icon;
+            return (
+              <div 
+                key={index}
+                className="bg-gradient-card p-8 rounded-xl text-center hover:scale-105 transition-transform duration-300 border border-border"
+              >
+                <div className="w-16 h-16 rounded-full bg-primary flex items-center justify-center mx-auto mb-6">
+                  <Icon className="w-8 h-8 text-white" strokeWidth={1.5} />
+                </div>
+                <h3 className="text-2xl font-bold text-foreground mb-3">
+                  {module.name}
+                </h3>
+                <p className="text-muted-foreground">
+                  {module.title}
+                </p>
               </div>
-              <h3 className="text-2xl font-bold text-foreground mb-3">
-                {module.name}
-              </h3>
-              <p className="text-muted-foreground">
-                {module.title}
-              </p>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
