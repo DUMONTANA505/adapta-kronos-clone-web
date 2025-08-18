@@ -3,7 +3,7 @@ import { HeroSection } from "@/components/HeroSection";
 import { AboutSection } from "@/components/AboutSection";
 import { FeaturesSection } from "@/components/FeaturesSection";
 import { MethodologySection } from "@/components/MethodologySection";
-import { ExpertsSection } from "@/components/ExpertsSection";
+import { ModulesSection } from "@/components/ModulesSection";
 import { PartnersSection } from "@/components/PartnersSection";
 import { MediaRecognitionSection } from "@/components/MediaRecognitionSection";
 import { BenchmarkSection } from "@/components/BenchmarkSection";
@@ -29,7 +29,7 @@ const Index = () => {
         </div>
       </section>
       
-      <ExpertsSection />
+      <ModulesSection />
       <FeaturesSection />
       <MethodologySection />
       <PartnersSection />
