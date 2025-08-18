@@ -54,8 +54,8 @@ export function ModulesSection() {
                 key={index}
                 className="bg-gradient-card p-8 rounded-xl text-center hover:scale-105 transition-transform duration-300 border border-border"
               >
-                <div className="w-16 h-16 rounded-full bg-primary flex items-center justify-center mx-auto mb-6">
-                  <Icon className="w-8 h-8 text-white" strokeWidth={1.5} />
+                <div className="flex items-center justify-center mx-auto mb-6">
+                  <Icon className="w-12 h-12 text-foreground" strokeWidth={1.5} />
                 </div>
                 <h3 className="text-2xl font-bold text-foreground mb-3">
                   {module.name}
