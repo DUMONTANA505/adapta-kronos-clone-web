@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Check, Star } from "lucide-react";
+import { Check, Star, X } from "lucide-react";
 import { useState } from "react";
 
 export function PricingSection() {
@@ -59,7 +59,20 @@ export function PricingSection() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        {/* X Vermelho com Balão */}
+        <div className="absolute top-20 right-10 z-20">
+          <div className="relative">
+            <div className="w-12 h-12 bg-red-500 rounded-full flex items-center justify-center transform rotate-12 animate-pulse">
+              <X className="w-8 h-8 text-white" strokeWidth={3} />
+            </div>
+            <div className="absolute -bottom-8 -left-16 bg-red-500 text-white px-4 py-2 rounded-lg text-sm font-bold whitespace-nowrap">
+              Primeiro mês grátis!
+              <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rotate-45 w-2 h-2 bg-red-500"></div>
+            </div>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto relative">
           {plans.map((plan, index) => <Card key={index} className={`relative ${plan.highlighted ? 'bg-gradient-card border-primary scale-105 shadow-2xl' : 'bg-gradient-card border-border'} hover:scale-105 transition-transform duration-300`}>
               {plan.highlighted && <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
                   <div className="bg-primary text-primary-foreground px-4 py-2 rounded-full text-sm font-semibold flex items-center">
@@ -73,19 +86,19 @@ export function PricingSection() {
                   {plan.name}
                 </CardTitle>
                 <div className="mb-4">
-                  <span className="text-4xl font-bold text-primary">
+                  <span className="text-4xl font-bold text-primary line-through opacity-50">
                     R$ {isAnnual ? plan.annualPrice.toLocaleString() : plan.monthlyPrice}
                   </span>
-                  <span className="text-muted-foreground">
-                    {isAnnual ? '/ano' : '/mês'}
+                  <div className="text-2xl font-bold text-green-400 mt-2">
+                    GRÁTIS
+                  </div>
+                  <span className="text-muted-foreground text-sm">
+                    primeiro mês
                   </span>
                   {isAnnual && (
                     <div className="mt-2">
-                      <div className="text-sm text-green-400">
-                        Equivale a R$ {(plan.annualPrice / 12).toFixed(2).replace('.', ',')}/mês
-                      </div>
                       <div className="text-xs text-muted-foreground">
-                        Economize 20% no plano anual
+                        Depois R$ {(plan.annualPrice / 12).toFixed(2).replace('.', ',')}/mês
                       </div>
                     </div>
                   )}
@@ -110,6 +123,21 @@ export function PricingSection() {
                 </Button>
               </CardContent>
             </Card>)}
+        </div>
+
+        {/* Texto promocional */}
+        <div className="text-center mt-12">
+          <div className="bg-red-500/10 border-2 border-red-500 rounded-lg p-6 max-w-2xl mx-auto">
+            <p className="text-red-400 font-bold text-lg mb-2">
+              Primeiro mês grátis sem condição de compra
+            </p>
+            <p className="text-yellow-400 font-semibold text-base mb-2">
+              Oferta exclusiva por tempo limitado
+            </p>
+            <p className="text-white font-bold text-xl uppercase">
+              Faça sua inscrição agora!!!
+            </p>
+          </div>
         </div>
       </div>
     </section>;
