@@ -3,18 +3,33 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Check, Star, X } from "lucide-react";
+import { Check, Star, X, Rocket, Phone } from "lucide-react";
 import { useState } from "react";
 
 export function PricingSection() {
   const [isAnnual, setIsAnnual] = useState(false);
   const [showWaitlist, setShowWaitlist] = useState(false);
+  const [showContactForm, setShowContactForm] = useState(false);
   const [selectedPlan, setSelectedPlan] = useState("");
   const [email, setEmail] = useState("");
+  const [contactData, setContactData] = useState({
+    name: "",
+    email: "",
+    whatsapp: ""
+  });
 
   const handlePlanSelection = (planName: string) => {
     setSelectedPlan(planName);
     setShowWaitlist(true);
+  };
+
+  const handleContactSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    // Aqui você pode implementar a lógica para enviar os dados de contato
+    console.log('Dados de contato:', contactData);
+    setContactData({ name: "", email: "", whatsapp: "" });
+    setShowContactForm(false);
+    // Adicionar toast ou feedback de sucesso aqui
   };
 
   const handleWaitlistSubmit = (e: React.FormEvent) => {
@@ -138,14 +153,24 @@ export function PricingSection() {
 
         {/* Texto promocional */}
         <div className="text-center mt-12">
-          <div className="bg-purple-500/10 border-2 border-purple-500 rounded-lg p-6 max-w-2xl mx-auto">
-            <p className="text-purple-200 font-bold text-xl uppercase mb-3">
-              FAÇA SUA INSCRIÇÃO AGORA
-            </p>
-            <p className="text-purple-300 font-semibold text-lg mb-3">
+          <div 
+            onClick={() => setShowContactForm(true)}
+            className="bg-purple-500/10 border-2 border-purple-500 rounded-lg p-6 max-w-2xl mx-auto cursor-pointer hover:bg-purple-500/20 transition-all duration-300 hover:scale-105 animate-pulse hover:animate-none relative overflow-hidden group"
+          >
+            {/* Efeito de brilho */}
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-purple-300/10 to-transparent transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+            
+            <div className="relative z-10 flex items-center justify-center mb-3">
+              <Rocket className="h-8 w-8 text-purple-300 mr-3 animate-bounce" />
+              <p className="text-purple-200 font-bold text-xl uppercase">
+                FAÇA SUA INSCRIÇÃO AGORA
+              </p>
+              <Rocket className="h-8 w-8 text-purple-300 ml-3 animate-bounce" />
+            </div>
+            <p className="text-purple-300 font-semibold text-lg mb-3 relative z-10">
               Primeiro mês grátis, sem condição de compra.
             </p>
-            <p className="text-purple-400 font-medium text-base">
+            <p className="text-purple-400 font-medium text-base relative z-10">
               Receba 1 mês de mentoria para o aplicativo KRONOS, com acesso a quatro módulos exclusivos.
             </p>
           </div>
@@ -195,6 +220,88 @@ export function PricingSection() {
                   className="flex-1 bg-primary hover:bg-primary/90"
                 >
                   Entrar na Lista
+                </Button>
+              </div>
+            </form>
+          </div>
+        </DialogContent>
+      </Dialog>
+
+      {/* Modal de Formulário de Contato */}
+      <Dialog open={showContactForm} onOpenChange={setShowContactForm}>
+        <DialogContent className="sm:max-w-md">
+          <DialogHeader>
+            <DialogTitle className="text-center text-2xl font-bold text-foreground flex items-center justify-center gap-2">
+              <Rocket className="h-6 w-6 text-primary" />
+              Inscrição KRONOS
+              <Rocket className="h-6 w-6 text-primary" />
+            </DialogTitle>
+          </DialogHeader>
+          <div className="space-y-4">
+            <div className="text-center">
+              <p className="text-muted-foreground mb-4">
+                Preencha seus dados e garante seu acesso ao primeiro mês gratuito do KRONOS!
+              </p>
+            </div>
+            <form onSubmit={handleContactSubmit} className="space-y-4">
+              <div>
+                <Label htmlFor="name" className="text-foreground">
+                  Nome Completo
+                </Label>
+                <Input
+                  id="name"
+                  type="text"
+                  placeholder="Seu nome completo"
+                  value={contactData.name}
+                  onChange={(e) => setContactData({...contactData, name: e.target.value})}
+                  required
+                  className="w-full"
+                />
+              </div>
+              <div>
+                <Label htmlFor="contact-email" className="text-foreground">
+                  Email
+                </Label>
+                <Input
+                  id="contact-email"
+                  type="email"
+                  placeholder="seu@email.com"
+                  value={contactData.email}
+                  onChange={(e) => setContactData({...contactData, email: e.target.value})}
+                  required
+                  className="w-full"
+                />
+              </div>
+              <div>
+                <Label htmlFor="whatsapp" className="text-foreground flex items-center gap-2">
+                  <Phone className="h-4 w-4" />
+                  WhatsApp
+                </Label>
+                <Input
+                  id="whatsapp"
+                  type="tel"
+                  placeholder="(11) 99999-9999"
+                  value={contactData.whatsapp}
+                  onChange={(e) => setContactData({...contactData, whatsapp: e.target.value})}
+                  required
+                  className="w-full"
+                />
+              </div>
+              <div className="flex gap-3">
+                <Button
+                  type="button"
+                  variant="outline"
+                  onClick={() => setShowContactForm(false)}
+                  className="flex-1"
+                >
+                  Cancelar
+                </Button>
+                <Button
+                  type="submit"
+                  className="flex-1 bg-primary hover:bg-primary/90 flex items-center gap-2"
+                >
+                  <Rocket className="h-4 w-4" />
+                  Garantir Acesso
                 </Button>
               </div>
             </form>
