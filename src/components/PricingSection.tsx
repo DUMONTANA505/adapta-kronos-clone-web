@@ -59,18 +59,6 @@ export function PricingSection() {
           </div>
         </div>
 
-        {/* X Vermelho com Balão */}
-        <div className="absolute top-20 right-10 z-20">
-          <div className="relative">
-            <div className="w-12 h-12 bg-red-500 rounded-full flex items-center justify-center transform rotate-12 animate-pulse">
-              <X className="w-8 h-8 text-white" strokeWidth={3} />
-            </div>
-            <div className="absolute -bottom-8 -left-16 bg-red-500 text-white px-4 py-2 rounded-lg text-sm font-bold whitespace-nowrap">
-              Primeiro mês grátis!
-              <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rotate-45 w-2 h-2 bg-red-500"></div>
-            </div>
-          </div>
-        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto relative">
           {plans.map((plan, index) => <Card key={index} className={`relative ${plan.highlighted ? 'bg-gradient-card border-primary scale-105 shadow-2xl' : 'bg-gradient-card border-border'} hover:scale-105 transition-transform duration-300`}>
