@@ -128,14 +128,14 @@ export function PricingSection() {
         {/* Texto promocional */}
         <div className="text-center mt-12">
           <div className="bg-purple-500/10 border-2 border-purple-500 rounded-lg p-6 max-w-2xl mx-auto">
-            <p className="text-purple-400 font-bold text-lg mb-2">
-              Primeiro mês grátis sem condição de compra
+            <p className="text-purple-200 font-bold text-xl uppercase mb-3">
+              FAÇA SUA INSCRIÇÃO AGORA
             </p>
-            <p className="text-purple-300 font-semibold text-base mb-2">
-              Oferta exclusiva por tempo limitado
+            <p className="text-purple-300 font-semibold text-lg mb-3">
+              Primeiro mês grátis, sem condição de compra.
             </p>
-            <p className="text-purple-200 font-bold text-xl uppercase">
-              Faça sua inscrição agora!!!
+            <p className="text-purple-400 font-medium text-base">
+              Receba 1 mês de mentoria para o aplicativo KRONOS, com acesso a quatro módulos exclusivos.
             </p>
           </div>
         </div>
