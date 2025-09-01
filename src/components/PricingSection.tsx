@@ -165,9 +165,14 @@ export function PricingSection() {
             
             <div className="relative z-10 flex items-center justify-center mb-3">
               <Rocket className="h-8 w-8 text-purple-300 mr-3 animate-bounce" />
-              <p className="text-purple-200 font-bold text-xl uppercase">
-                FAÇA SUA INSCRIÇÃO AGORA
-              </p>
+              <div className="text-center">
+                <p className="text-purple-200 font-bold text-xl uppercase">
+                  FAÇA SUA INSCRIÇÃO AGORA
+                </p>
+                <p className="text-green-400 font-bold text-lg uppercase mt-1">
+                  MENTORIA GRÁTIS
+                </p>
+              </div>
               <Rocket className="h-8 w-8 text-purple-300 ml-3 animate-bounce" />
             </div>
             <p className="text-purple-300 font-semibold text-lg mb-3 relative z-10">
