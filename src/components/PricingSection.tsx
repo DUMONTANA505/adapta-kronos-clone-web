@@ -1,10 +1,30 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
 import { Check, Star, X } from "lucide-react";
 import { useState } from "react";
 
 export function PricingSection() {
   const [isAnnual, setIsAnnual] = useState(false);
+  const [showWaitlist, setShowWaitlist] = useState(false);
+  const [selectedPlan, setSelectedPlan] = useState("");
+  const [email, setEmail] = useState("");
+
+  const handlePlanSelection = (planName: string) => {
+    setSelectedPlan(planName);
+    setShowWaitlist(true);
+  };
+
+  const handleWaitlistSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    // Aqui você pode implementar a lógica para enviar o email para a lista de espera
+    console.log(`Email ${email} adicionado à lista de espera para o plano ${selectedPlan}`);
+    setEmail("");
+    setShowWaitlist(false);
+    // Adicionar toast ou feedback de sucesso aqui
+  };
 
   const plans = [{
     name: "Genesis",
@@ -106,7 +126,10 @@ export function PricingSection() {
                     </li>)}
                 </ul>
                 
-                <Button className={`w-full ${plan.highlighted ? 'bg-primary hover:bg-primary/90 text-primary-foreground' : 'bg-secondary hover:bg-secondary/80 text-secondary-foreground'}`}>
+                <Button 
+                  onClick={() => handlePlanSelection(plan.name)}
+                  className={`w-full ${plan.highlighted ? 'bg-primary hover:bg-primary/90 text-primary-foreground' : 'bg-secondary hover:bg-secondary/80 text-secondary-foreground'}`}
+                >
                   Escolher Plano
                 </Button>
               </CardContent>
@@ -128,5 +151,55 @@ export function PricingSection() {
           </div>
         </div>
       </div>
+
+      {/* Modal de Lista de Espera */}
+      <Dialog open={showWaitlist} onOpenChange={setShowWaitlist}>
+        <DialogContent className="sm:max-w-md">
+          <DialogHeader>
+            <DialogTitle className="text-center text-2xl font-bold text-foreground">
+              Lista de Espera - {selectedPlan}
+            </DialogTitle>
+          </DialogHeader>
+          <div className="space-y-4">
+            <div className="text-center">
+              <p className="text-muted-foreground mb-4">
+                Seja um dos primeiros a ter acesso ao KRONOS. Deixe seu email e receba notificações exclusivas sobre o lançamento.
+              </p>
+            </div>
+            <form onSubmit={handleWaitlistSubmit} className="space-y-4">
+              <div>
+                <Label htmlFor="email" className="text-foreground">
+                  Email
+                </Label>
+                <Input
+                  id="email"
+                  type="email"
+                  placeholder="seu@email.com"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
+                  className="w-full"
+                />
+              </div>
+              <div className="flex gap-3">
+                <Button
+                  type="button"
+                  variant="outline"
+                  onClick={() => setShowWaitlist(false)}
+                  className="flex-1"
+                >
+                  Cancelar
+                </Button>
+                <Button
+                  type="submit"
+                  className="flex-1 bg-primary hover:bg-primary/90"
+                >
+                  Entrar na Lista
+                </Button>
+              </div>
+            </form>
+          </div>
+        </DialogContent>
+      </Dialog>
     </section>;
 }
