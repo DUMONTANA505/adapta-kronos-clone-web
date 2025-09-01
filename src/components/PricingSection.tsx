@@ -115,6 +115,9 @@ export function PricingSection() {
                   <div className="text-2xl font-bold text-green-400 mt-2">
                     GRÁTIS
                   </div>
+                  <div className="text-lg font-semibold text-green-400">
+                    Mentoria
+                  </div>
                   <span className="text-muted-foreground text-sm">
                     primeiro mês
                   </span>
