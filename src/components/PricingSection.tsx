@@ -119,7 +119,7 @@ export function PricingSection() {
                     Mentoria
                   </div>
                   <span className="text-muted-foreground text-sm">
-                    primeiro mês
+                    primeiro módulo
                   </span>
                   {isAnnual && (
                     <div className="mt-2">
@@ -176,7 +176,7 @@ export function PricingSection() {
               <Rocket className="h-8 w-8 text-purple-300 ml-3 animate-bounce" />
             </div>
             <p className="text-purple-300 font-semibold text-lg mb-3 relative z-10">
-              Primeiro mês grátis, sem condição de compra.
+              Primeiro módulo grátis, sem condição de compra.
             </p>
             <p className="text-purple-400 font-medium text-base relative z-10">
               Receba 1 mês de mentoria para o aplicativo KRONOS, com acesso a quatro módulos exclusivos.
