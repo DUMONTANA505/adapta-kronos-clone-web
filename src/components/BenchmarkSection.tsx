@@ -28,10 +28,6 @@ export function BenchmarkSection() {
                 <div className="text-4xl font-bold text-kronos-purple mb-2">9.8 / 10</div>
                 <div className="text-sm text-muted-foreground">NOTA FINAL</div>
               </div>
-              <div className="space-y-1 text-sm text-muted-foreground">
-                <div>Avaliador: GPT-4 Turbo</div>
-                <div>Data: 25 de Julho de 2025</div>
-              </div>
             </div>
             
             <div className="space-y-4">
@@ -57,10 +53,6 @@ export function BenchmarkSection() {
               <div className="my-4">
                 <div className="text-4xl font-bold text-kronos-purple mb-2">9.8 / 10</div>
                 <div className="text-sm text-muted-foreground">NOTA FINAL</div>
-              </div>
-              <div className="space-y-1 text-sm text-muted-foreground">
-                <div>Avaliador: Gemini 2.5 Pro</div>
-                <div>Data: 25 de Julho de 2025</div>
               </div>
             </div>
             
