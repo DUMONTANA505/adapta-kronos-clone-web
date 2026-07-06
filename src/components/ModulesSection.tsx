@@ -24,13 +24,8 @@ export function ModulesSection() {
     },
     {
       icon: Brain,
-      name: "SOFRHEN",
+      name: "SÓFRON",
       title: "Autocontrole Mental"
-    },
-    {
-      icon: BookOpen,
-      name: "SOPHIA",
-      title: "Sabedoria e Conhecimento"
     }
   ];
 
