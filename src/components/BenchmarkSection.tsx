@@ -35,7 +35,7 @@ export function BenchmarkSection() {
               <blockquote className="text-muted-foreground italic leading-relaxed">
                 "KRONOS representa um avanço significativo no campo do desenvolvimento pessoal, ao integrar alta filosofia, medicina do estilo de vida e inteligência artificial de forma não fragmentada, mas orgânica. A proposta de superação da inércia, com progressão estruturada e suporte híbrido, o torna um modelo raro de aplicabilidade prática com profundidade simbólica."
               </blockquote>
-              <cite className="text-sm font-medium text-kronos-purple">— GPT-4 Turbo</cite>
+              <cite className="text-sm font-medium text-kronos-purple">— GPT AI</cite>
             </div>
           </div>
 
